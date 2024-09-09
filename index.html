@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome ekleyin -->
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Product Management</h1>
+        <!-- Product Add and Edit Form -->
+        <form id="product-form" class="mb-4">
+            <input type="hidden" id="product-id">
+            <div class="form-group">
+                <label for="product-title">Title</label>
+                <input type="text" class="form-control" id="product-title" required>
+            </div>
+            <div class="form-group">
+                <label for="product-price">Price</label>
+                <input type="number" class="form-control" id="product-price" required>
+            </div>
+            <div class="form-group">
+                <label for="product-image">Image URL</label>
+                <input type="text" class="form-control" id="product-image" required>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="btn btn-primary" id="submit-btn">Add Product</button>
+            </div>
+        </form>
+        <!-- Product List -->
+        <h2>Product List</h2>
+        <div class="row" id="product-list">
+        <!-- Product cards will be added here -->        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
